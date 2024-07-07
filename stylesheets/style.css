@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -853,4 +854,67 @@ header .main_nav li i{
     background-color: transparent;
     border: 1px solid #F7C35F;
     color: #F7C35F;
+}
+
+/* Counter */
+#counter{
+    background-color: #334B35;
+}
+
+.counter_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding-bottom: 10%;
+
+    @media(max-width:900px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:520px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.properties_sold_counter{
+
+    @media(max-width:400px){
+        margin-top: 5%;
+    }
+}
+
+.available_properties{
+
+    @media(max-width:900px){
+        margin-top: 5%;
+    }
+}
+
+.counter{
+    font-size: 45px;
+    color: #ffffff;
+
+    @media(max-width:620px){
+        font-size: 35px;
+    }
+
+    @media(max-width:550px){
+        font-size: 30px;
+    }
+
+    @media(max-width:420px){
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 18px;
+
+        @media(max-width:490px){
+            font-size: 16px;
+        }
+    }
+}
+
+.counter_number{
+    font-weight: 600;
 }
