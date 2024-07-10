@@ -58,7 +58,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 99;
+    z-index: 1000;
     transition: all 1s ease-in-out;
 }
 
@@ -124,7 +124,7 @@ header .main_nav li a{
     transition: 0.7s ease-in-out;
     position: relative;
 
-    @media(max-width:800px){
+    @media(max-width:900px){
         display: none;
     }
 }
@@ -140,6 +140,10 @@ header .main_nav li a::after{
     margin-left: 25%;
     bottom: -4px;
     transition: 0.5s ease-in-out;
+}
+
+header .main_nav li .active_nav{
+    font-weight: 600;
 }
 
 header .main_nav li .active_nav::after{
@@ -164,7 +168,7 @@ header .main_nav li i{
     position: absolute;
     display: none;
 
-    @media(max-width:800px){
+    @media(max-width:900px){
         display: flex;
         z-index: 20;
     }
@@ -311,6 +315,17 @@ header .main_nav li i{
     ul{
         li{
             .active_nav_ham{
+                font-weight: 600;
+                color: #F7C35F;
+            }
+        }
+    }
+}
+
+.offScreenMenu{
+    ul{
+        li{
+            a:hover{
                 color: #F7C35F;
             }
         }
@@ -829,7 +844,7 @@ header .main_nav li i{
 .service_btn{
     cursor: pointer;
     border: none;
-    padding: 4%;
+    padding: 0 2% 0 2%;
     border-radius: 5px;
     background-color: #F7C35F;
     color: #334B35;
@@ -839,15 +854,6 @@ header .main_nav li i{
     align-items: center;
     justify-content: center;
     
-}
-
-.service_btn .right_arrow{
-    font-size: 20px;
-    margin-left: -16%;
-    transform: translateX(0px);
-    opacity: 0;
-    position: relative;
-    transition: 0.8s ease-in-out;
 }
 
 .service_btn:hover{
@@ -917,4 +923,267 @@ header .main_nav li i{
 
 .counter_number{
     font-weight: 600;
+}
+
+/* Products */
+
+.big_overall_container{
+    margin: 5% 5%;
+}
+
+.products_heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brief_products_detail{
+    width: 400px;
+    color: #334B35;
+
+    @media(max-width:430px){
+        width: 300px;
+    }
+
+    @media(max-width:320px){
+        width: 250px;
+    }
+}
+
+.products_heading_par{
+    font-weight: 600;
+    font-size: 40px;
+    color: #334B35;
+}
+
+.product_section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    text-align: center;
+
+    @media(max-width:900px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:520px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.product_container{
+    color: #ffffff;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.product_overall_container{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 5px;
+}
+
+.product_head{
+    font-size: 22px;
+    padding-top: 10%;
+    font-weight: 600;
+}
+
+.product_image_1{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    background-image: url(../assets/images/croc_meat_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image_2{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    background-image: url(../assets/images/poultry_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image_3{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    background-image: url(../assets/images/eggs.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product_image_4{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    background-image: url(../assets/images/croc_products_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.product_head_details{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #334B35;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+    padding: 4% 2%;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.read_more{
+    width: 150px;
+    padding: 1% 2% 1% 2%;
+}
+
+.product_content:hover{
+    opacity: 1;
+}
+
+.product_content > *{
+    transform: translateY(30px);
+    transition: all 1s ease-in-out;
+}
+
+.product_content:hover > *{
+    transform: translateY(0px);
+}
+
+/* Gallery */
+#gallery{
+
+    @media(max-width:520px){
+        margin-top: 30%;
+    }
+
+    @media(max-width:450px){
+        margin-top: 40%;
+    }
+
+    @media(max-width:350px){
+        margin-top: 50%;
+    }
+}
+
+.gallery_head_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #334B35;
+}
+
+.gallery_head{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.gallery_brief_container{
+    width: 400px;
+
+    @media(max-width:430px){
+        width: 300px;
+    }
+
+    @media(max-width:320px){
+        width: 250px;
+    }
+}
+
+.gallery_images_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    margin-top: 5%;
+
+
+    @media(max-width:520px){
+        grid-template-columns: 1fr;
+    }
+
+    img{
+        border-radius: 10px;
+    }
+}
+
+
+.big_image{
+    width: 100%;
+    height: 100%;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.small_image_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.small_image{
+    width: 100%;
+    height: 100%;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.gallery_button{
+    cursor: pointer;
+    border: none;
+    padding: 1% 2% 1% 2%;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #334B35;
+    color: #F7C35F;
+    transition: 0.5s ease-in-out;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.gallery_button .right_arrow{
+    font-size: 20px;
+    margin-left: -16%;
+    transform: translateX(0px);
+    opacity: 0;
+    position: relative;
+    transition: 0.8s ease-in-out;
+}
+
+.gallery_button:hover{
+    width: 170px;
+}
+
+.gallery_button:hover .right_arrow{
+    opacity: 1;
+    transform: translateX(30px);
 }
