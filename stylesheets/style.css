@@ -1326,6 +1326,12 @@ footer{
     }
 }
 
+.links_big_container{
+    @media(max-width:590px){
+        margin-top: 10%;
+    }
+}
+
 .footer_page_links_container{
     margin: 0 10%;
 
@@ -1336,6 +1342,24 @@ footer{
 
 .links, .footer_about_head{
     font-weight: 600;
+}
+
+.footer_links{
+    i{
+        font-size: 40px;
+        color: #ffffff;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.footer_links{
+    i:hover{
+        color: #F7C35F;
+    }
+}
+
+.fa-instagram{
+    margin-left: 5%;
 }
 
 .footer_page_links{
