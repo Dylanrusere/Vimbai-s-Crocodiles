@@ -1334,6 +1334,10 @@ footer{
     }
 }
 
+.links, .footer_about_head{
+    font-weight: 600;
+}
+
 .footer_page_links{
     margin-top: 3%;
     display: flex;
