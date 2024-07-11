@@ -1330,6 +1330,10 @@ footer{
     @media(max-width:590px){
         margin-top: 10%;
     }
+
+    @media(max-width:400px){
+        margin-top: 15%;
+    }
 }
 
 .footer_page_links_container{
