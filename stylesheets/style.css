@@ -144,6 +144,7 @@ header .main_nav li a::after{
 
 header .main_nav li .active_nav{
     font-weight: 600;
+    color: #F7C35F;
 }
 
 header .main_nav li .active_nav::after{
@@ -685,11 +686,6 @@ header .main_nav li i{
     }
 }
 
-.overall_heading{
-    @media(max-width:550px){
-        font-size: 30px;
-    }
-}
 
 .about_content_paragrapgh{
     p{
@@ -725,7 +721,7 @@ header .main_nav li i{
 .main_button:hover{
     background-color: transparent;
     border: 1px solid #F7C35F;
-    width: 170px; 
+    width: 160px; 
     color: #F7C35F;
 }
 
@@ -744,7 +740,7 @@ header .main_nav li i{
 }
 
 .overall_container_services{
-    padding: 10% 0;
+    padding: 10% 0 0 0;
 
     @media(max-width:800px){
         padding-top: 15%;
@@ -785,6 +781,7 @@ header .main_nav li i{
     background-image: url(../assets/images/farm_2.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .services_cards_overlay{
@@ -864,14 +861,21 @@ header .main_nav li i{
 
 /* Counter */
 #counter{
-    background-color: #334B35;
+    background-image: url(../assets/images/poultry_2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overall_counter_container{
+    background-color: #334b358a;
 }
 
 .counter_container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    padding-bottom: 10%;
+    padding: 10% 0;
 
     @media(max-width:900px){
         grid-template-columns: repeat(2, 1fr);
@@ -1157,7 +1161,7 @@ header .main_nav li i{
 .gallery_button{
     cursor: pointer;
     border: none;
-    padding: 1% 2% 1% 2%;
+    padding: 1%;
     border-radius: 5px;
     width: 150px;
     background-color: #334B35;
@@ -1188,7 +1192,7 @@ header .main_nav li i{
 }
 
 .gallery_button:hover{
-    width: 170px;
+    width: 160px;
 }
 
 .gallery_button:hover .right_arrow{
@@ -1255,6 +1259,7 @@ header .main_nav li i{
                 width: 100%;
                 padding: 0.5% 1% 0.5% 1%;
                 outline: none;
+                border: 1px solid #334B35;
             }
     
             button{
@@ -1264,6 +1269,7 @@ header .main_nav li i{
                 background-color: #334B35;
                 color: #ffffff;
                 border-radius: 5px;
+                cursor: pointer;
                 transition: 0.5s ease-in-out;
             }
         }
@@ -1383,6 +1389,593 @@ footer{
 
 .footer_page_links{
     a:hover{
+        color: #F7C35F;
+    }
+}
+
+/* ------------------------------------ ABOUT PAGE -------------------------------------- */
+.about_page_bg{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../assets/images/croc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media(max-width:800px){
+        height: 40vh;
+    }
+}
+
+.about_page_overlay{
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+    @media(max-width:800px){
+        height: 40vh;
+    }
+}
+
+.about_page_head{
+    color: #ffffff;
+    font-size: 60px;
+
+    @media(max-width:600px){
+        font-size: 50px;
+    }
+
+    span{
+        color: #F7C35F;
+    }
+}
+
+.overall_about{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about_page_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+
+    @media(max-width:800px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.about_images_container{
+    width: 100%;
+}
+
+
+
+.big_img{
+    position: relative;
+    width: 90%;
+    margin-left: 2%;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+}
+
+.small_img{
+    width: 14%;
+    position: absolute;
+    border: 3px solid #334B35;
+    margin-top: 15%;
+    border-radius: 10px;
+    margin-left: -10%;
+
+    @media(max-width:800px){
+        width: 25%;
+        margin-left: -16%;
+        margin-top: 35%;
+    }
+
+    @media(max-width:600px){
+        width: 30%;
+        margin-left: -23%;
+        margin-top: 28%;
+    }
+
+    @media(max-width:370px){
+        border: 2px solid #1D2124;
+    }
+}
+
+.about_page_content{
+    display: flex;
+    align-items: center;
+}
+/* Clients worked with */
+.infinite_img {
+    width: 65%;
+
+    @media(max-width:950px){
+        width: 75%;
+    }
+
+    @media(max-width:800px){
+        width: 85%;
+    }
+
+    @media(max-width:600px){
+        width: 95%;
+    }
+
+    @media(max-width:500px){
+        width: 100%;
+    }
+  }
+  
+  #infinite_section {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .clients_head{
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 5%;
+  }
+
+  article {
+    display: flex;
+    width: 200%;
+    animation: bannermove 20s linear infinite;
+  }
+  
+  article.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+  .infinite {
+    width: 100%;
+  }
+  
+  .infinite_ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .infinite_li {
+    width: 100%;
+  }
+  
+  @keyframes bannermove{
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+/* Counter */
+#counter_about{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/poultry_2.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.counter_container_about{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 5% 0;
+
+    @media(max-width:900px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:520px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.counter_container_overall_about{
+    background: linear-gradient(90deg, #334B35, rgba(0, 0, 0, 0.534));
+}
+
+
+/* Team */
+#our_team{
+    margin-top: 7%;
+}
+
+.team_grid_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    margin-top: 5%;
+
+    @media(max-width:880px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:470px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.overall_heads{
+
+    @media(max-width:630px){
+        font-size: 25px;
+    }
+}
+
+.team_member{
+    width: 100%;
+    text-align: center;
+}
+
+.team_member_img{
+    width: 80%;
+    border-radius: 50%;
+    border: 2px solid #334B35;
+}
+
+.team_name{
+    font-weight: 600;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+.team_position{
+    color: #1d2124c4;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Mission - Vision - Value */
+
+.mvv_container{
+    margin: 7% 14% 5% 14%;
+
+    @media(max-width:750px){
+        margin-top: 10%;
+    }
+
+    @media(max-width:750px){
+        margin-top: 40%;
+    }
+}
+
+.mission_vision_value_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+
+    @media(max-width:750px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:750px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.our_mvv{
+    width: 100%;
+    text-align: center;
+}
+
+.mvv_img{
+    width: 40%;
+
+    @media(max-width:750px){
+        width: 20%;
+    }
+
+    @media(max-width:750px){
+        width: 40%;
+    }
+}
+
+.mvv_head{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 2% 0;
+}
+
+.value{
+
+    @media(max-width:750px){
+        width: 200%;
+    }
+
+    @media(max-width:750px){
+        width: 100%;
+    }
+}
+
+
+/* Founder`s Story */
+#founder_story{
+    background-color: #334B35;
+    padding: 5% 0;
+    color: #ffffff;
+
+    @media(max-width:650px){
+        padding-bottom: 10%;
+    }
+}
+
+.founder_story_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+
+
+    @media(max-width:630px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.founder_big_img{
+    position: relative;
+    width: 70%;
+    border-radius: 20px;
+}
+
+.founder_small_img{
+    width: 14%;
+    position: absolute;
+    border: 3px solid #334B35;
+    margin-top: 20%;
+    border-radius: 10px;
+    margin-left: -10%;
+
+    @media(max-width:630px){
+        width: 30%;
+        margin-top: 40%;
+    }
+
+    @media(max-width:350px){
+        margin-top: 40%;
+        margin-left: -15%;
+    }
+}
+
+.her_story_head, .story_head, .cofounder_name{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cofounder_name{
+    margin-top: 3%;
+
+    @media(max-width:725px){
+        font-size: 15px;
+    }
+
+    @media(max-width:650px){
+        font-size: 18px;
+    }
+
+    @media(max-width:320px){
+        font-size: 16px;
+    }
+}
+
+.her_social_links{
+    i{
+        font-size: 30px;
+        color: #ffffff;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.her_social_links{
+    i:hover{
+        color: #F7C35F;
+    }
+}
+
+.fa-facebook{
+    margin-left: 2%;
+}
+
+/* Services About_page */
+#services_about{
+    background-color: #ffffff;
+}
+
+.services_head_about{
+    color: #334B35;
+    font-size: 40px;
+    font-weight: 600;
+    
+    span{
+        color: #F7C35F;
+    }
+}
+
+.services_head_par_about{
+    color: #334B35;
+}
+
+.overall_container_services_about{
+    padding: 3% 0;
+
+    @media(max-width:800px){
+        padding-top: 15%;
+    }
+}
+
+/* Call To Action */
+#call_to_action{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/farm_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 10%;
+
+    @media(max-width:670px){
+        margin-top: 15%;
+    }
+
+    @media(max-width:520px){
+        margin-top: 25%;
+    }
+
+    @media(max-width:470px){
+        margin-top: 35%;
+    }    
+
+    @media(max-width:340px){
+        margin-top: 40%;
+    }
+}
+
+.call_to_action_overall_container{
+    background: linear-gradient(90deg, #334B35, rgba(0, 0, 0, 0.534));
+    padding: 10% 0;
+}
+
+.call_to_action_par{
+    font-size: 40px;
+    font-weight: 600;
+    width: 80%;
+    color: #ffffff;
+
+    @media(max-width:450px){
+        font-size: 30px;
+    }
+
+    @media(max-width:360px){
+        font-size: 20px;
+    }
+}
+
+.contact_button{
+    cursor: pointer;
+    border: none;
+    padding: 1%;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #F7C35F;
+    color: #334B35;
+    transition: 0.5s ease-in-out;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact_button .right_arrow{
+    font-size: 20px;
+    margin-left: -16%;
+    transform: translateX(0px);
+    opacity: 0;
+    position: relative;
+    transition: 0.8s ease-in-out;
+}
+
+.contact_button:hover{
+    background-color: transparent;
+    border: 1px solid #F7C35F;
+    width: 170px; 
+    color: #F7C35F;
+}
+
+.contact_btn_btn:hover{
+    padding: 1% 2.5% 1% 0%;
+}
+
+.contact_button:hover .right_arrow{
+    opacity: 1;
+    transform: translateX(30px);
+}
+
+
+/* Footer */
+
+
+.footer_content_about{
+    padding-top: 18%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+
+    @media(max-width:870px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(max-width:850px){
+        padding-top: 30%;
+    }
+
+    @media(max-width:590px){
+        grid-template-columns: 1fr;
+    }
+
+    @media(max-width:400px){
+        padding-top: 40%;
+    }
+}
+
+/* -------------------- OUR SERVICES -------------------------- */
+.services_page_bg{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../assets/images/poultry.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media(max-width:800px){
+        height: 40vh;
+    }
+}
+
+.services_page_overlay{
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+    @media(max-width:800px){
+        height: 40vh;
+    }
+}
+
+.services_page_head{
+    color: #ffffff;
+    font-size: 60px;
+
+    @media(max-width:600px){
+        font-size: 50px;
+    }
+
+    span{
         color: #F7C35F;
     }
 }

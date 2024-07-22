@@ -19,9 +19,9 @@
     <header>
         <div class="logo"><a href=""><img class="logo_img" src="./assets/images/Vimbai`s_Croc_-_logo.png" alt="Our Logo"></a></div>
             <ul class="main_nav">
-                <li><a href="#" class="active_nav">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="./index.html" class="active_nav">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
@@ -31,9 +31,9 @@
                 <ul>
                     <li><a href="./index.html" class="active_nav_ham">Home</a></li>
                     &nbsp;
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
                     &nbsp;
-                    <li><a href="#">Services</a></li>
+                    <li><a href="./services.html">Services</a></li>
                     &nbsp;
                     <li><a href="#">Products</a></li>
                     &nbsp;
@@ -127,7 +127,7 @@
                 <div class="about_content">
                     <div class="about_content_container">
                         <div class="about_head" data-aos="fade-right" data-aos-duration="1500">
-                            <p class="overall_heading">About <span>Us</span></p>
+                            <p class="overall_heads">About <span>Us</span></p>
                         </div>
                         <div class="about_content_paragrapgh" data-aos="fade-right" data-aos-duration="2000">
                             <p class="about_par">We are operating as a farming business that is focused on profitable, 
@@ -137,7 +137,7 @@
                                 found here in the Mashonaland region of Zimbabwe. We prefer a clean lifestyle & we're 
                                 willing to embrace change as a means to that end. We also have an open mind regarding
                                  partnerships therefore any investment opportunities are welcome.</p>
-                                 <a href="" class="learn_more" data-aos="fade-right" data-aos-duration="2500"><button class="main_button about_btn">Learn More<i class="fa-solid fa-arrow-right-long right_arrow"></i></button></a>
+                                <button onclick="window.location.href='about.html';" class="main_button about_btn" data-aos="fade-right" data-aos-duration="2500">Learn More<i class="fa-solid fa-arrow-right-long right_arrow"></i></button>
                         </div>
                     </div>
                 </div>
@@ -145,11 +145,37 @@
         </div>
      </section>
 
+     <!-- Counter -->
+      <section id="counter">
+        <div class="overall_counter_container">
+            <div class="overall_container">
+                <div class="counter_container">
+                    <div class="clients counter">
+                        <div id="counter_clients" class="counter_number">0</div>
+                        <p class="second">Happy <br>Clients</p>
+                    </div>
+                    <div class="properties_sold_counter counter">
+                        <div id="counter_deliveries" class="counter_number">0</div>
+                        <p class="second">Deliveries <br>Done</p>
+                    </div>
+                    <div class="available_properties counter">
+                        <div id="counter_awards" class="counter_number">0</div>
+                        <p class="second">Winning <br>Awards</p>
+                    </div>
+                    <div class="available_properties counter">
+                        <div id="counter_certifications" class="counter_number">0</div>
+                        <p class="second">Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
      <!-- Services -->
      <section id="services">
         <div class="overall_container_services">
             <div class="services_head_container">
-                <p class="services_head overall_heading" data-aos="fade-right" data-aos-duration="1000">What We <span>Offer</span></p>
+                <p class="services_head overall_heads" data-aos="fade-right" data-aos-duration="1000">What We <span>Offer</span></p>
                 <p class="services_head_par" data-aos="fade-right" data-aos-duration="1500">We Offer a <span>wide variety</span> of services. <br> Feel free to go through the services that 
                 we offer.</p>
             </div>
@@ -182,35 +208,11 @@
         </div>
      </section>
 
-     <!-- Counter -->
-      <section id="counter">
-        <div class="overall_container">
-            <div class="counter_container">
-                <div class="clients counter">
-                    <div id="counter_clients" class="counter_number">0</div>
-                    <p class="second">Happy <br>Clients</p>
-                </div>
-                <div class="properties_sold_counter counter">
-                    <div id="counter_deliveries" class="counter_number">0</div>
-                    <p class="second">Deliveries <br>Done</p>
-                </div>
-                <div class="available_properties counter">
-                    <div id="counter_awards" class="counter_number">0</div>
-                    <p class="second">Winning <br>Awards</p>
-                </div>
-                <div class="available_properties counter">
-                    <div id="counter_certifications" class="counter_number">0</div>
-                    <p class="second">Certifications</p>
-                </div>
-            </div>
-        </div>
-      </section>
-
       <!-- Products -->
        <section id="products">
             <div class="big_overall_container">
                 <div class="products_heading">
-                    <p class="products_heading_par" data-aos="fade-right" data-aos-duration="1000">Our Products</p>
+                    <p class="products_heading_par overall_heads" data-aos="fade-right" data-aos-duration="1000">Our Products</p>
                     <div class="brief_products_detail">
                         <p class="products_heading_brief" data-aos="slide-up" data-aos-duration="2000">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                             Vel sunt incidunt autem iste ea molestias provident velit, cum possimus.</p>
@@ -273,7 +275,7 @@
         <section id="gallery">
             <div class="big_overall_container">
                 <div class="gallery_head_container">
-                    <p class="gallery_head" data-aos="fade-right" data-aos-duration="2500">Our <span>Gallery</span></p>
+                    <p class="gallery_head overall_heads" data-aos="fade-right" data-aos-duration="2500">Our <span>Gallery</span></p>
                     <div class="gallery_brief_container">
                         <p class="gallery_brief" data-aos="fade-right" data-aos-duration="2500">Lorem ipsum dolor, sit 
                             amet consectetur adipisicing elit. Sit possimus suscipit, debitis odit dolore voluptatem.</p>
@@ -298,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="learn_more" data-aos="slide-up" data-aos-duration="2500"><button class="gallery_button">View More<i class="fa-solid fa-arrow-right-long right_arrow"></i></button></a>
+                <button class="gallery_button" data-aos="slide-up" data-aos-duration="2500">View More<i class="fa-solid fa-arrow-right-long right_arrow"></i></button>
             </div>
         </section>
 
@@ -306,15 +308,15 @@
          <section id="contact_section">
                 <div class="big_overall_container">
                     <div class="contact_head_container" data-aos="fade-right" data-aos-duration="1000">
-                        <p class="contact_head">Get In Touch</p>
+                        <p class="contact_head overall_heads">Get In Touch</p>
                     </div>
                     <div class="contact_grid_container">
                         <div class="contact_details">
                             <p class="contact_details_par" data-aos="fade-right" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur, ores ducimus dolore animi sunt harum, hic iusto.</p>
                             <div class="contact_details_container">
-                                <p class="contact_email" data-aos="fade-right" data-aos-duration="2000"><a href="mailto:info@vimbaicrocodiles.co.zw">info@vimbaicrocodiles.co.zw</a></p>
-                                <p class="phone_number" data-aos="fade-right" data-aos-duration="2500">+(263) 73 419 9666</p>
-                                <p class="contact_location" data-aos="fade-right" data-aos-duration="2500">123 Domorfalls, Harare, Zimbabwe</p>
+                                <p class="contact_email" data-aos="fade-right" data-aos-duration="2000"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@vimbaicrocodiles.co.zw">info@vimbaicrocodiles.co.zw</a></p>
+                                <p class="phone_number" data-aos="fade-right" data-aos-duration="2500"><i class="fa-solid fa-phone"></i> +(263) 73 419 9666</p>
+                                <p class="contact_location" data-aos="fade-right" data-aos-duration="2500"><i class="fa-solid fa-location-dot"></i> 123 Domorfalls, Harare, Zimbabwe</p>
                             </div>
                         </div>
                         <div class="contact_form">
@@ -339,21 +341,22 @@
                     <div class="footer_content">
                         <div class="footer_logo_content">
                             <img class="footer_logo" src="./assets/images/Vimbai`s_Croc_-_logo.png" alt="Logo" data-aos="fade-right" data-aos-duration="1500">
-                            <p class="footer_logo_content_par" data-aos="fade-right" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur nam
-                                 tempora maiores totam ipsum, nisi quis quae qui ipsa consectetur corporis illo tempore.</p>
+                            <!-- <p class="footer_logo_content_par" data-aos="fade-right" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur nam
+                                 tempora maiores totam ipsum, nisi quis quae qui ipsa consectetur corporis illo tempore.</p> -->
                         </div>
                         <div class="footer_about" data-aos="fade-up" data-aos-duration="2000">
                             <p class="footer_about_head">About Us</p>
-                            <p class="footer_about_content_par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Ratione eveniet ad explicabo, veritatis molestias rem sint corrupti est consequuntur suscipit.</p>
+                            <p class="footer_about_content_par">We are operating as a farming business that is 
+                                focused on profitable, progressive and sustainable production of premium quality 
+                                identity-preserved crocodile meat, crocodile skin and other vast farm products 
+                                like chickens, ducks, eggs.</p>
                         </div>
-                        <div class="footer_links">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <div class="footer_links" >
+                            <a href=""><i class="fa-brands fa-facebook" data-aos="fade-up" data-aos-duration="1500"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram" data-aos="fade-up" data-aos-duration="2500"></i></a>
                         </div>
                     </div>
                     <div class="links_big_container">
-                        <p class="links">Links</p>
                         <div class="footer_page_links_container">
                             <div class="footer_page_links">
                                 <a href="#">Home</a>
