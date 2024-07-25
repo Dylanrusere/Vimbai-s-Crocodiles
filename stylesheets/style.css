@@ -1533,7 +1533,11 @@ footer{
 /* Areas of Expertise */
 #areas_of_expertise{
     background-color: #334B35;
-    padding: 5% 0;
+    padding: 10% 0 5% 0;
+
+    @media(max-width:400px){
+        padding-top: 15%;
+    }
 }
 
 .areas_of_expertise_head{
@@ -1545,6 +1549,14 @@ footer{
 .expertise_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @media(max-width:600px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:400px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .progress_expertise{
@@ -1581,6 +1593,27 @@ footer{
     font-size: 20px;
     font-weight: 500;
     color: #ffffff;
+}
+
+.organic_expertise, .crocodile_expertise{
+
+    @media(max-width:600px){
+        margin-top: 10%;
+    }
+}
+
+.poultry_expertise{
+    
+
+    @media(max-width:600px){
+        width: 200%;
+        margin-top: 10%;
+    }
+
+
+    @media(max-width:400px){
+        width: 100%;
+    }
 }
 
 .circular-progress-2{
