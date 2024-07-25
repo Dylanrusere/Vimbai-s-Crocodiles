@@ -1075,6 +1075,42 @@ header .main_nav li i{
     transform: translateY(0px);
 }
 
+/* Consultancy Home */
+.overall_consultancy_home{
+    padding: 5% 0;
+}
+
+.overall_consultancy_about{
+    padding: 5% 0 0 0;
+}
+
+.consultancy_home_head{
+    font-size: 40px;
+    font-weight: 600;
+    color: #334B35;
+}
+
+.consultancy_home_par{
+    color: #334B35;
+    width: 75%;
+}
+
+.areas_head{
+    font-size: 30px;
+    font-weight: 600;
+    color: #334B35;
+}
+
+.our_expertise{
+
+    li{
+        list-style: disc;
+        color: #334B35;
+    }
+}
+
+
+
 /* Gallery */
 #gallery{
 
@@ -1504,6 +1540,97 @@ footer{
     font-size: 40px;
     font-weight: 600;
     color: #ffffff;
+}
+
+.expertise_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.progress_expertise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#F7C35F 3.6deg, #ffffff 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #334B35;
+}
+.progress-value{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #F7C35F;
+}
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.circular-progress-2{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#F7C35F 3.6deg, #ffffff 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress-2::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #334B35;
+}
+.progress-value-2{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #F7C35F;
+}
+
+.circular-progress-3{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#F7C35F 3.6deg, #ffffff 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress-3::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #334B35;
+}
+.progress-value-3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #F7C35F;
 }
 
 
@@ -2008,10 +2135,15 @@ footer{
 .chickens_head{
     font-weight: 600;
     font-size: 40px;
+    color: #334B35;
 
     @media(max-width:820px){
         font-size: 30px;
     }
+}
+
+.chickens_par{
+    color: #334B35;
 }
 
 .about_images_container{
@@ -2091,10 +2223,10 @@ footer{
 
 .eggs_img{
     margin-top: 6.5%;
-    border: 5px solid #ffffff;
+    border: 5px solid #334B35;
 
     @media(max-width:840px){
-        border: 3px solid #ffffff;
+        border: 3px solid #334B35;
     }
 }
 
@@ -2113,6 +2245,7 @@ footer{
 .consultancy_head{
     font-weight: 600;
     font-size: 40px;
+    color: #334B35;
 
     @media(max-width:820px){
         font-size: 30px;
@@ -2130,6 +2263,7 @@ footer{
 }
 
 .consultancy_par_two, .consultancy_par{
+    color: #334B35;
 
     @media(max-width:800px){
         width: 150%;
@@ -2179,6 +2313,21 @@ footer{
 .quote_button:hover .right_arrow{
     opacity: 1;
     transform: translateX(30px);
+}
+
+.location_map_container{
+    width: 100%;
+    height: 50vh;
+}
+
+.visit_us{
+    padding: 5% 0;
+}
+
+.visit_us_head{
+    color: #334B35;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 
