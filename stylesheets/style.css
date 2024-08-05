@@ -967,7 +967,7 @@ header .main_nav li i{
     gap: 3%;
     text-align: center;
 
-    @media(max-width:900px){
+    @media(max-width:1115px){
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1010,7 +1010,7 @@ header .main_nav li i{
     width: 100%;
     height: 250px;
     border-radius: 5px;
-    background-image: url(../assets/images/poultry_3.jpg);
+    background-image: url(../assets/images/dressed_live.png);
     background-position: center;
     background-size: cover;
 }
@@ -1028,7 +1028,7 @@ header .main_nav li i{
     width: 100%;
     height: 250px;
     border-radius: 5px;
-    background-image: url(../assets/images/croc_products_1.jpg);
+    background-image: url(../assets/images/pork_meat.webp);
     background-position: center;
     background-size: cover;
 }
@@ -1237,6 +1237,124 @@ header .main_nav li i{
     transform: translateX(30px);
 }
 
+/* Testimonials */
+.testimonials_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonial_area {
+    background-color: #334B35;
+	padding: 10% 0;
+}
+
+.testimonial_head_text{
+    color: #F7C35F;
+    font-size: 30px;
+}
+
+.testimonial_par{
+    color: #F7C35F;
+    width: 75%;
+}
+
+.box-area {
+	padding: 30px;
+	position: relative;
+	display: block;
+	background: #F7C35F;
+    border-radius: 10px;
+	color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 40px 0;
+}
+.box-area h5 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #334B35;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+}
+.box-area span {
+	color: #334B35;
+	display: block;
+	font-size: 13px;
+	margin: 0 0 10px;
+	font-weight: 400;
+}
+.box-area .content {
+	color: #334B35;
+}
+.box-area .img-area {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	right: 0;
+	z-index: 1;
+	border: 5px solid #334B35;
+	border-radius: 50%;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.box-area .img-area img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+#testimonial_area .owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+#testimonial_area .owl-prev, #testimonial_area .owl-next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #334B35;
+	border-radius: 50%;
+	text-align: center;
+	background: #F7C35F;
+	position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+#testimonial_area .owl-next:hover, #testimonial_area .owl-prev:hover{
+    background-color: #ffffff;
+}
+
+#testimonial_area .owl-prev {
+	left: -60px;
+	top: -30px;
+}
+#testimonial_area .owl-next {
+	right: -60px;
+	top: -30px;
+}
+@media only screen and (max-width: 991px) {
+	.owl-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.box-area {
+		text-align: center;
+	}
+	.owl-nav {
+		display: none;
+	}
+}
+
+.about_testimonials{
+    margin-top: 5%;
+}
+
+
 /* Contact */
 #contact_section{
     color: #334B35;
@@ -1434,7 +1552,7 @@ footer{
 .about_page_bg{
     width: 100%;
     height: 60vh;
-    background-image: url(../assets/images/croc.jpg);
+    background-image: url(../assets/images/img8.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -1497,13 +1615,17 @@ footer{
     width: 90%;
     margin-left: 2%;
     border-radius: 20px;
-    border: 5px solid #ffffff;
+    border: 5px solid #334B35;
+
+    @media(max-width:370px){
+        border: 3px solid #334B35;
+    }
 }
 
 .small_img{
     width: 14%;
     position: absolute;
-    border: 3px solid #334B35;
+    border: 5px solid #334B35;
     margin-top: 15%;
     border-radius: 10px;
     margin-left: -10%;
@@ -1521,7 +1643,7 @@ footer{
     }
 
     @media(max-width:370px){
-        border: 2px solid #1D2124;
+        border: 3px solid #334B35;
     }
 }
 
@@ -1762,7 +1884,7 @@ footer{
     }
 }
 
-.counter_container_overall_about{
+.counter_container_overall_about, .counter_container_overall_home{
     background: linear-gradient(90deg, #334B35, rgba(0, 0, 0, 0.534));
 }
 
@@ -1891,8 +2013,12 @@ footer{
     gap: 3%;
 
 
-    @media(max-width:630px){
+    @media(max-width:900px){
         grid-template-columns: 1fr;
+    }
+
+    @media(max-width:480px){
+        gap: 0;
     }
 }
 
@@ -1916,7 +2042,7 @@ footer{
     border-radius: 10px;
     margin-left: -10%;
 
-    @media(max-width:630px){
+    @media(max-width:900px){
         width: 30%;
         margin-top: 40%;
     }
@@ -1966,6 +2092,14 @@ footer{
     margin-left: 2%;
 }
 
+.story_par_two{
+    width: 200%;
+
+    @media(max-width:900px){
+        width: 100%;
+    }
+}
+
 /* Services About_page */
 #services_about{
     background-color: #ffffff;
@@ -1997,27 +2131,10 @@ footer{
 #call_to_action{
     width: 100%;
     height: 100%;
-    background-image: url(../assets/images/farm_1.jpg);
+    background-image: url(../assets/images/farm.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin-top: 10%;
-
-    @media(max-width:670px){
-        margin-top: 15%;
-    }
-
-    @media(max-width:520px){
-        margin-top: 25%;
-    }
-
-    @media(max-width:470px){
-        margin-top: 35%;
-    }    
-
-    @media(max-width:340px){
-        margin-top: 40%;
-    }
 }
 
 .call_to_action_overall_container{
@@ -2147,6 +2264,28 @@ footer{
     span{
         color: #F7C35F;
     }
+}
+
+.services_welcome_container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.services_welcome_{
+    width: 50%;
+
+    @media(max-width:740px){
+        width: 75%;
+    }
+
+    @media(max-width:500px){
+        width: 100%;
+    }
+}
+
+.services_welcome{
+    margin: 5% 0;
 }
 
 .chickens_container{
@@ -2348,6 +2487,175 @@ footer{
     transform: translateX(30px);
 }
 
+.croc_consultancy_container{
+    color: #334B35;
+
+    ul{
+        li{
+            list-style: disc;
+        }
+    }
+}
+
+.croc_con_head{
+    font-size: 20px;
+    font-weight: 600;
+    color: #334B35;
+}
+
+/* Gallery Page */
+.port {
+	padding: 5%;
+}
+.gallery-item {
+	position: relative;
+}
+
+.gallery_grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+
+    @media(max-width:600px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gallery_head_page{
+    font-size: 30px;
+    font-weight: 600;
+    color: #334B35;
+}
+
+.check_gallery{
+    color: #334B35;
+    font-size: 20px;
+}
+
+/* overlay */
+
+.gallery-item img {
+	width: 100%;
+    border-radius: 10px;
+}
+.gallery-item .gallery_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.596);
+    border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.gallery-item:hover .gallery_overlay {
+	opacity: 1;
+}
+.gallery-item .gallery_overlay h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.gallery-item .gallery_overlay p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.gallery-item .gallery_overlay .btn {
+	font-size: 16px;
+}
+.modal {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content{
+    
+    img{
+        border-radius: 10px;
+    }
+}
+
+.fade.active{
+    display: inline-block;
+}
+
+.fa-times{
+    cursor: pointer;
+    position: fixed;
+    z-index: 200;
+    color: #ffffff;
+    font-size: 50px;
+    margin-left: 70%;
+}
+
+.image-4{
+    
+    @media(max-width:600px){
+        margin-top: -70%;
+    }
+}
+
+.image-5{
+    margin-top: -70%;
+    
+    @media(max-width:600px){
+        margin-top: 0;
+    }
+}
+
+.image-6{
+    margin-top: -30%;
+    
+    @media(max-width:600px){
+        margin-top: -40%;
+    }
+}
+
+.image-8{
+    margin-top: -140%;
+    
+    @media(max-width:600px){
+        margin-top: 0;
+    }
+}
+
+.image-9{
+    margin-top: -60%;
+    
+    @media(max-width:600px){
+        margin-top: -40%;
+    }
+}
+
+.image-10{
+    margin-top: -10%;
+    
+    @media(max-width:600px){
+        margin-top: 0;
+    }
+}
+
+.image-11{
+    margin-top: -110%;
+    
+    @media(max-width:600px){
+        margin-top: 0;
+    }
+}.image-12{
+    
+    @media(max-width:600px){
+        margin-top: -30%;
+    }
+}
+
+
+/* Location */
 .location_map_container{
     width: 100%;
     height: 50vh;
