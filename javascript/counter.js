@@ -1,11 +1,11 @@
 
 // Counter Section
-let targetNumber1 = 999;
+let targetNumber1 = 799;
 let targetNumber2 = 199;
-let targetNumber3 = 79;
+let targetNumber3 = 14;
 let targetNumber4 = 9;
-let counter1 = 0;
-let counter2 = 0;
+let counter1 = 500;
+let counter2 = 100;
 let counter3 = 0;
 let counter4 = 0;
 let counterElement1 = document.getElementById("counter_clients");
@@ -18,7 +18,7 @@ function incrementCounter1() {
     counterElement1.textContent = counter1;
 
     if (counter1 <= targetNumber1) {
-      setTimeout(incrementCounter1, 1);
+      setTimeout(incrementCounter1, 10);
     }
   }
 
@@ -36,7 +36,7 @@ function incrementCounter1() {
     counterElement3.textContent = counter3;
 
     if (counter3 <= targetNumber3) {
-      setTimeout(incrementCounter3, 90);
+      setTimeout(incrementCounter3, 300);
     }
   }
 
@@ -45,7 +45,7 @@ function incrementCounter1() {
     counterElement4.textContent = counter4;
 
     if (counter4 <= targetNumber4) {
-      setTimeout(incrementCounter4, 80);
+      setTimeout(incrementCounter4, 450);
     }
   }
 
