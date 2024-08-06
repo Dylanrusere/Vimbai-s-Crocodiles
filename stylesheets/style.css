@@ -607,6 +607,73 @@ header .main_nav li i{
     transform: translateX(30px);
 }
 
+/* FAQs */
+#frequently_asked_quetions{
+    padding: 5% 0;
+}
+
+.faqs_grid_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+}
+
+.faqs_left_container{
+    display: flex;
+    align-items: center;
+}
+
+.faqs_head{
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    color: #334B35;
+}
+
+.accordion_container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.accordion_item {
+    border-bottom: 1px solid #F7C35F;
+}
+
+.accordion_item:last-child {
+    border-bottom: none;
+}
+
+.accordion_button {
+    background-color: #334B35;
+    color: #F7C35F;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.accordion_button:hover {
+    background-color: #F7C35F;
+    color: #334B35;
+}
+
+.accordion_content {
+    padding: 15px;
+    display: none;
+    background-color: #F7C35F;
+}
+
+.accordion_content.active {
+    display: block;
+}
+
+
 /* Services */
 #services{
     background-color: #334B35;

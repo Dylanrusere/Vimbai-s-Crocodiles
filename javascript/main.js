@@ -52,3 +52,17 @@ let currentIndex = 0;
     });
 
     setInterval(autoRotateHero, 9000);
+
+    document.querySelectorAll('.accordion_button').forEach(button => {
+      button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+
+          content.classList.toggle('active');
+
+          document.querySelectorAll('.accordion_content').forEach(item => {
+              if (item !== content) {
+                  item.classList.remove('active');
+              }
+          });
+      });
+  });
