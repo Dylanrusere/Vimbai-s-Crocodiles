@@ -607,6 +607,59 @@ header .main_nav li i{
     transform: translateX(30px);
 }
 
+/* Articles */
+#articles{
+    padding: 5% 0;
+    color: #334B35;
+}
+
+.articles_head{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.articles_grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin-top: 5%;
+}
+
+.articles_card_container{
+    width: 100%;  
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5% 4%;
+}
+
+.articles_image{
+    width: 100%;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.articles_content_head{
+    font-weight: 600;
+}
+
+.articles_read_more{
+    background-color: #334B35;
+    padding: 2% 3%;
+    color: #F7C35F;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.articles_read_more:hover{
+    background-color: #F7C35F;
+    color: #334B35;
+}
+
+
 /* FAQs */
 #frequently_asked_quetions{
     padding: 5% 0;
