@@ -616,6 +616,10 @@ header .main_nav li i{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4%;
+
+    @media(max-width:600px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .faqs_left_container{
@@ -667,6 +671,7 @@ header .main_nav li i{
     padding: 15px;
     display: none;
     background-color: #F7C35F;
+    color: #334B35;
 }
 
 .accordion_content.active {
