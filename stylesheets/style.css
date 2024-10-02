@@ -972,15 +972,11 @@ header .main_nav li i{
 }
 
 .brief_products_detail{
-    width: 400px;
+    width: 60%;
     color: #334B35;
 
-    @media(max-width:430px){
-        width: 300px;
-    }
-
     @media(max-width:320px){
-        width: 250px;
+        width: 80%;
     }
 }
 
@@ -1170,14 +1166,10 @@ header .main_nav li i{
 }
 
 .gallery_brief_container{
-    width: 400px;
-
-    @media(max-width:430px){
-        width: 300px;
-    }
+    width: 60%;
 
     @media(max-width:320px){
-        width: 250px;
+        width: 80%;
     }
 }
 

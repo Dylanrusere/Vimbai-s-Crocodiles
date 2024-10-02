@@ -1,7 +1,7 @@
 
 // Counter Section
-let targetNumber1 = 799;
-let targetNumber2 = 199;
+let targetNumber1 = 999;
+let targetNumber2 = 299;
 let targetNumber3 = 14;
 let targetNumber4 = 9;
 let counter1 = 500;
@@ -18,7 +18,7 @@ function incrementCounter1() {
     counterElement1.textContent = counter1;
 
     if (counter1 <= targetNumber1) {
-      setTimeout(incrementCounter1, 10);
+      setTimeout(incrementCounter1, 6);
     }
   }
 
@@ -27,7 +27,7 @@ function incrementCounter1() {
     counterElement2.textContent = counter2;
 
     if (counter2 <= targetNumber2) {
-      setTimeout(incrementCounter2, 40);
+      setTimeout(incrementCounter2, 15);
     }
   }
 
