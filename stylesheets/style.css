@@ -1397,6 +1397,7 @@ header .main_nav li i{
 .contact_grid_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
 
     @media(max-width:590px){
         grid-template-columns: 1fr;
@@ -1413,7 +1414,7 @@ header .main_nav li i{
     
     .form_container{
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
 
         @media(max-width:590px){
             justify-content: center;
@@ -1428,14 +1429,10 @@ header .main_nav li i{
     
             input{
                 margin-top: 8%;
-                width: 300px;
+                width: 100%;
                 padding: 0.5% 1% 0.5% 1%;
                 outline: none;
                 border: 1px solid #334B35;
-
-                @media(max-width:730px){
-                    width: 250px;
-                }
             }
     
             textarea{

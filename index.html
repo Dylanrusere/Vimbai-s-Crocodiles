@@ -536,23 +536,25 @@
                     </div>
                     <div class="contact_grid_container">
                         <div class="contact_details">
-                            <p class="contact_details_par" data-aos="fade-right" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur, ores ducimus dolore animi sunt harum, hic iusto.</p>
+                            <p class="contact_details_par" data-aos="fade-right" data-aos-duration="1500">Feel free to reach out to us for any inquiries, collaborations, or support. We’re here to help and would love to hear from you! Simply fill out the form below or use the provided contact details, and we’ll get back to you as soon as possible.</p>
                             <div class="contact_details_container">
-                                <p class="contact_email" data-aos="fade-right" data-aos-duration="2000"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@vimbaicrocodiles.co.zw">info@vimbaicrocodiles.co.zw</a></p>
+                                <p class="contact_email" data-aos="fade-right" data-aos-duration="2000"><i class="fa-solid fa-envelope"></i> <a href="mailto:vsdzingirai@gmail.com">vsdzingirai@gmail.com</a></p>
                                 <p class="phone_number" data-aos="fade-right" data-aos-duration="2500"><i class="fa-solid fa-phone"></i> +(263) 77 286 7558</p>
-                                <p class="contact_location" data-aos="fade-right" data-aos-duration="2500"><i class="fa-solid fa-location-dot"></i> 123 Domorfalls, Harare, Zimbabwe</p>
+                                <p class="phone_number" data-aos="fade-right" data-aos-duration="2500"><i class="fa-brands fa-square-whatsapp"></i> +(263) 73 419 9666</p>
+                                <p class="contact_location" data-aos="fade-right" data-aos-duration="2500"><i class="fa-solid fa-location-dot"></i> Darwendale, Zvimba Mash West</p>
                             </div>
                         </div>
                         <div class="contact_form">
                             <div class="form_container">
-                                <form action="">
+                                <form id="contact-form">
                                     <p class="form_head_par">Send A Message</p>
-                                    <input type="text" placeholder="Enter Your Name" id="name" required data-aos="slide-up" data-aos-duration="2000">
-                                    <input type="email" placeholder="Enter Your Email" required data-aos="slide-up" data-aos-duration="2500">
-                                    <input type="number" placeholder="Enter Your Mobile Number" id="number" required data-aos="slide-up" data-aos-duration="3000">
+                                    <input name="Full Name" type="text" placeholder="Enter Your Name" id="name" required data-aos="slide-up" data-aos-duration="2000">
+                                    <input name="Email Address" type="email" placeholder="Enter Your Email" required data-aos="slide-up" data-aos-duration="2500">
+                                    <input name="Mobile Number" type="number" placeholder="Enter Your Mobile Number" id="number" required data-aos="slide-up" data-aos-duration="3000">
                                     <textarea name="Message" placeholder="Enter Your Message" id="message" rows="4" required data-aos="slide-up" data-aos-duration="3500"></textarea>
                                     <button type="submit" class="submit_contact" data-aos="slide-up" data-aos-duration="3000"> Send Message</button>
                                 </form>
+                                <div id="form-response" style="display:none; margin-top: 20px;"></div>
                             </div>
                         </div>
                     </div>
@@ -608,31 +610,79 @@
     <script src="./javascript/counter.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script>
-    $(".testmonial_slider_area").owlCarousel({
-            autoplay: true,
-            slideSpeed:1000,
-            items : 3,
-            loop: true,
-            nav:true,
-            navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
-            margin: 30,
-            dots: true,
-            responsive:{
-                320:{
-                    items:1
-                },
-                767:{
-                    items:2
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
+        $(".testmonial_slider_area").owlCarousel({
+                autoplay: true,
+                slideSpeed:1000,
+                items : 3,
+                loop: true,
+                nav:true,
+                navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+                margin: 30,
+                dots: true,
+                responsive:{
+                    320:{
+                        items:1
+                    },
+                    767:{
+                        items:2
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
                 }
+                
+            });
+    </script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault(); 
+          
+          
+          var formData = new FormData(event.target);
+          
+          
+          fetch('https://formspree.io/f/mblrnwob', {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
             }
-            
+          }).then(function(response) {
+            var responseDiv = document.getElementById('form-response');
+            if (response.ok) {
+              responseDiv.style.display = 'block';
+              responseDiv.style.color = '#FFCC00';
+              responseDiv.textContent = 'Thank you! Your submission has been received.';
+              document.getElementById('contact-form').reset();
+        
+              setTimeout(function() {
+                responseDiv.style.display = 'none';
+              }, 10000); 
+        
+            } else {
+              responseDiv.style.display = 'block';
+              responseDiv.style.color = 'white';
+              responseDiv.textContent = 'There was a problem with your submission. Please try again.';
+        
+
+              setTimeout(function() {
+                responseDiv.style.display = 'none';
+              }, 10000);
+            }
+          }).catch(function(error) {
+            var responseDiv = document.getElementById('form-response');
+            responseDiv.style.display = 'block';
+            responseDiv.style.color = 'white';
+            responseDiv.textContent = 'There was a problem with your submission. Please try again.';
+        
+            setTimeout(function() {
+              responseDiv.style.display = 'none';
+            }, 10000);
+          });
         });
-</script>
+        </script>
 </body>
 </html>
