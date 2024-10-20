@@ -1954,7 +1954,7 @@ footer{
 /* Mission - Vision - Value */
 
 .mvv_container{
-    margin: 7% 14% 5% 14%;
+    margin: 7% 5% 5% 5%;
 
     @media(max-width:750px){
         margin-top: 10%;
