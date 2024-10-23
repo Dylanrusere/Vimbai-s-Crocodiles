@@ -66,3 +66,23 @@ let currentIndex = 0;
           });
       });
   });
+
+  // Video
+  const playButton = document.getElementById('play-video');
+  const modal = document.getElementById('video-modal');
+  const closeBtn = document.querySelector('.close-btn');
+  const videoPlayer = document.getElementById('video-player');
+  
+  // Open modal and play video
+  playButton.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    videoPlayer.play();
+  });
+  
+  // Close modal and pause video
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    videoPlayer.pause();
+    videoPlayer.currentTime = 0; // Reset video to the beginning
+  });
+  
