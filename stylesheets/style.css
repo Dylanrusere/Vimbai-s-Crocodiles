@@ -1106,7 +1106,7 @@ header .main_nav li i{
 }
 
 .overall_consultancy_about{
-    padding: 5% 0 0 0;
+    padding: 5% 0 5% 0;
 }
 
 .consultancy_home_head{
@@ -2454,14 +2454,6 @@ footer{
 
 .consultancy_par_two, .consultancy_par{
     color: #334B35;
-
-    @media(max-width:800px){
-        width: 150%;
-    }
-
-    @media(max-width:400px){
-        width: 100%;
-    }
 }
 
 .quote_button{
@@ -2505,6 +2497,15 @@ footer{
     transform: translateX(30px);
 }
 
+.consultancy_container{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+
+    @media(max-width:550px){
+        grid-template-columns: 1fr;
+    }
+}
+
 .croc_consultancy_container{
     color: #334B35;
 
@@ -2528,6 +2529,7 @@ footer{
 }
 
 .video-play-button {
+    cursor: pointer;
     position: absolute;
     z-index: 10;
     top: 50%;
