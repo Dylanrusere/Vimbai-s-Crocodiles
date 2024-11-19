@@ -333,6 +333,49 @@ header .main_nav li i{
     }
 }
 
+.whatsapp_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #F7C35F;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp_btn a {
+    color: #334B35;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+}
+
+.whatsapp_btn:hover {
+    background-color: #ffffff;
+    animation: none;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #F7C35F;
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+
 
 /* Hero Section */
 #hero_section{
